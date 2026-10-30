@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="328 224 1120 430" role="img" aria-labelledby="title desc">
+  <title id="title">keel</title>
+  <desc id="desc">Blauw gevouwen k-symbool met donker woordmerk keel. Volledig opgebouwd uit vectorpaden op een transparante achtergrond.</desc>
+  <defs>
+    <linearGradient id="blue-stem" x1="364" y1="309" x2="486" y2="566" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1048d8"/><stop offset="1" stop-color="#0b43cc"/>
+    </linearGradient>
+    <linearGradient id="blue-top" x1="562" y1="340" x2="635" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#398aff"/><stop offset="1" stop-color="#307cef"/>
+    </linearGradient>
+    <linearGradient id="blue-bottom" x1="544" y1="484" x2="654" y2="618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c43cb"/><stop offset="1" stop-color="#093cbb"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="850" y1="323" x2="1270" y2="592" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172333"/><stop offset="1" stop-color="#15202f"/>
+    </linearGradient>
+  </defs>
+  <g id="symbol">
+    <path fill="url(#blue-stem)" d="M364 336 Q363 317 378 307 L456 262 Q485 249 485 280 L485 518 Q485 536 470 547 L386 604 Q364 620 364 591 Z"/>
+    <path fill="url(#blue-top)" d="M497 404 L558 347 Q565 340 579 340 L679 340 Q689 340 694 348 Q700 355 692 363 L584 471 Q575 481 564 474 L499 429 Q486 419 497 404 Z"/>
+    <path fill="url(#blue-bottom)" d="M489 544 L554 487 Q564 479 574 487 L689 596 Q700 607 688 615 Q685 618 676 618 L562 618 Q551 618 544 611 L489 559 Q484 553 489 544 Z"/>
+  </g>
+  <g id="wordmark" fill="url(#ink)">
+    <path id="letter-k" d="M774 323 H805 Q815 323 815 333 V458 L883 397 Q888 392 896 392 H944 Q957 392 949 402 L857 486 L949 577 Q957 589 945 589 H896 Q889 589 884 583 L815 516 V579 Q815 589 805 589 H774 Q764 589 764 579 V333 Q764 323 774 323 Z"/>
+    <path id="letter-e-1" fill-rule="evenodd" d="M1135 489 Q1135 504 1125 505 H990 Q998 549 1040 549 Q1071 550 1086 525 Q1089 521 1093 524 L1122 537 Q1130 540 1125 547 Q1098 593 1039 593 C978 593 938 552 938 494 C938 434 980 390 1038 390 C1096 390 1135 432 1135 489 Z M990 469 H1084 Q1077 434 1038 434 Q1003 434 990 469 Z"/>
+    <path id="letter-e-2" fill-rule="evenodd" d="M1345 489 Q1345 504 1335 505 H1200 Q1208 549 1250 549 Q1281 550 1296 525 Q1299 521 1303 524 L1332 537 Q1340 540 1335 547 Q1308 593 1249 593 C1188 593 1148 552 1148 494 C1148 434 1190 390 1248 390 C1306 390 1345 432 1345 489 Z M1200 469 H1294 Q1287 434 1248 434 Q1213 434 1200 469 Z"/>
+    <path id="letter-l" d="M1370 323 H1400 Q1410 323 1410 333 V579 Q1410 589 1400 589 H1370 Q1360 589 1360 579 V333 Q1360 323 1370 323 Z"/>
+  </g>
+</svg>

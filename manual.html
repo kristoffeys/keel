@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keel manual</title>
+<meta name="description" content="How to set up and use Keel: accounts, the inbox, shortcuts, calendar, search, rules, AI, encryption and your data.">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img class="light-only" src="img/logo.svg" alt="Keel"><img class="dark-only" src="img/logo-dark.svg" alt="Keel"></a>
+    <nav>
+      <a href="./#features">Features</a>
+      <a href="manual.html" aria-current="page">Manual</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="btn" href="mailto:kristof.feys@gmail.com?subject=Keel%20early%20access">Get early access</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap doc-layout">
+    <aside class="toc">
+      <div class="eyebrow">Manual</div>
+      <a href="#getting-started">Getting started</a>
+      <a href="#inbox">The inbox</a>
+      <a href="#shortcuts">Keyboard shortcuts</a>
+      <a href="#writing">Writing mail</a>
+      <a href="#search">Search</a>
+      <a href="#calendar">Calendar and invitations</a>
+      <a href="#organise">Rules, labels and the Cleaner</a>
+      <a href="#ai">AI assistance</a>
+      <a href="#encryption">Encryption</a>
+      <a href="#assistants">Assistants (MCP)</a>
+      <a href="#data">Your data and backups</a>
+      <a href="#troubleshooting">Troubleshooting</a>
+    </aside>
+
+    <article class="narrow">
+      <h1>Keel manual</h1>
+      <p class="lede">Everything you need to set Keel up and get through your mail quickly. Press <kbd>?</kbd> in the app at any time to see the shortcuts.</p>
+
+      <h2 id="getting-started">Getting started</h2>
+      <p>On first launch Keel asks for your name, your email address and your provider. What happens next depends on the provider:</p>
+      <table>
+        <tr><th>Provider</th><th>How you connect</th></tr>
+        <tr><td><strong>Gmail / Google Workspace</strong></td><td><em>Sign in with Google</em> (recommended), or an app password</td></tr>
+        <tr><td><strong>Outlook / Microsoft 365</strong></td><td><em>Sign in with Microsoft</em> only. Microsoft doesn't accept passwords for mail apps.</td></tr>
+        <tr><td><strong>iCloud, Yahoo, Fastmail</strong></td><td>An app password from your provider's account page</td></tr>
+        <tr><td><strong>Other</strong></td><td>Your IMAP and SMTP server settings and password</td></tr>
+      </table>
+      <h3>Using an app password</h3>
+      <ol>
+        <li>Click <strong>Create an app password</strong>. Keel opens the right page at your provider.</li>
+        <li>Name it "Keel", press Create and copy it.</li>
+        <li>Come back to Keel. It picks the password up from the clipboard and connects.</li>
+      </ol>
+      <div class="callout"><p>Gmail only offers app passwords when 2-Step Verification is on. If the page says app passwords aren't available, turn on 2-Step Verification first, or use <em>Sign in with Google</em>.</p></div>
+      <p>Keel then downloads your mail: headers first, so the inbox is usable within seconds, then message bodies, newest first. Quitting halfway is fine; it picks up where it left off.</p>
+      <p>Add more accounts in <strong>Settings → Add account</strong>. Each one gets a colour dot so you can tell at a glance where a thread lives.</p>
+
+      <h2 id="inbox">The inbox</h2>
+      <div class="shot"><img class="light-only" src="img/inbox.jpg" alt="The unified inbox" loading="lazy"><img class="dark-only" src="img/inbox-dark.jpg" alt="The unified inbox in dark mode" loading="lazy"></div>
+      <ul>
+        <li><strong>Inbox</strong> shows Focused mail from every account. <strong>Other</strong> holds newsletters, notifications and no-reply senders. Anyone you've written to always stays in Focused. You can turn this split off in Settings.</li>
+        <li><strong>Snoozed</strong> threads are hidden everywhere until their time comes, then show up again.</li>
+        <li><strong>Archive</strong> moves a thread to the account's own archive folder. Archive, trash and move can be undone for 5 seconds, or with <kbd>⌘Z</kbd>.</li>
+        <li><strong>Pin</strong> keeps a thread on top. <strong>Mute</strong> keeps a noisy thread out of your inbox when new replies arrive.</li>
+        <li>A <strong>No reply yet</strong> chip shows on mail you sent that is still waiting for an answer.</li>
+        <li>Select several threads with <kbd>x</kbd>, or shift-click a range, and act on all of them at once.</li>
+      </ul>
+      <p>Keel works offline. Archive, move or trash while disconnected and it queues the changes until you're back online.</p>
+
+      <h2 id="shortcuts">Keyboard shortcuts</h2>
+      <p>Rebind any of these in <strong>Settings → Shortcuts</strong>.</p>
+      <table>
+        <tr><th>Key</th><th>Action</th><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>j</kbd> / <kbd>k</kbd></td><td>Next / previous conversation</td><td><kbd>r</kbd></td><td>Reply</td></tr>
+        <tr><td><kbd>J</kbd> / <kbd>K</kbd></td><td>Extend selection down / up</td><td><kbd>a</kbd></td><td>Reply all</td></tr>
+        <tr><td><kbd>x</kbd></td><td>Select</td><td><kbd>f</kbd></td><td>Forward</td></tr>
+        <tr><td><kbd>e</kbd></td><td>Archive</td><td><kbd>c</kbd></td><td>Compose</td></tr>
+        <tr><td><kbd>#</kbd></td><td>Trash</td><td><kbd>z</kbd></td><td>Snooze</td></tr>
+        <tr><td><kbd>s</kbd></td><td>Star</td><td><kbd>/</kbd></td><td>Search</td></tr>
+        <tr><td><kbd>u</kbd></td><td>Mark read / unread</td><td><kbd>F</kbd></td><td>Focus mode</td></tr>
+        <tr><td><kbd>p</kbd></td><td>Pin</td><td><kbd>?</kbd></td><td>Show all shortcuts</td></tr>
+        <tr><td><kbd>m</kbd></td><td>Mute conversation</td><td><kbd>⌘Z</kbd> / <kbd>⇧⌘Z</kbd></td><td>Undo / redo</td></tr>
+      </table>
+
+      <h2 id="writing">Writing mail</h2>
+      <ul>
+        <li>Replies are sent from the address the original mail was sent to. Change it in the From field if you need to.</li>
+        <li>Drafts save as you type, attachments included. Open a draft from the thread or from <strong>Drafts</strong> to pick up where you left off.</li>
+        <li>Paste files straight into the message to attach them. Minimise the composer to look something up, or pop it out into its own window.</li>
+        <li><strong>Undo send</strong>: every message waits a few seconds before it leaves (10 by default, set in <strong>Settings → Sending</strong>). Mail waiting in that window goes out from Keel itself, so keep Keel running until it has left.</li>
+        <li>Keel can be your default mail app, so <code>mailto:</code> links open a new message (<strong>Settings → Integrations</strong>).</li>
+      </ul>
+
+      <h2 id="search">Search</h2>
+      <p>Press <kbd>/</kbd> and type. Search covers every account and works offline, because every message is indexed on your Mac. Narrow it down with:</p>
+      <table>
+        <tr><th>Filter</th><th>Example</th></tr>
+        <tr><td><code>from:</code></td><td><code>from:anna invoice</code></td></tr>
+        <tr><td><code>to:</code></td><td><code>to:team@company.com</code></td></tr>
+        <tr><td><code>subject:</code></td><td><code>subject:"quarterly report"</code></td></tr>
+        <tr><td><code>account:</code></td><td><code>account:work contract</code></td></tr>
+      </table>
+
+      <h2 id="calendar">Calendar and invitations</h2>
+      <div class="shot"><img src="img/calendar.jpg" alt="The week view" loading="lazy"></div>
+      <p>Open <strong>Calendar</strong> in the sidebar for day, week and month views. Google and Microsoft calendars come in automatically when you sign in with Google or Microsoft. Add iCloud or any other CalDAV calendar, or subscribe to an .ics feed, in <strong>Settings → Calendars</strong>. Press <kbd>N</kbd> for a new event.</p>
+      <h3>Answering an invitation</h3>
+      <p>An invitation shows as a card at the top of the mail, with your other meetings that day and a warning when it overlaps with something. Click <strong>Accept</strong>, <strong>Maybe</strong> or <strong>Decline</strong>:</p>
+      <ul>
+        <li>For an account connected with <em>Sign in with Google/Microsoft</em>, Keel answers in your calendar and the organiser is told.</li>
+        <li>For other accounts, Keel mails your answer to the organiser.</li>
+      </ul>
+      <p>If you already answered on your phone or elsewhere, the card shows that answer.</p>
+
+      <h2 id="organise">Rules, labels and the Cleaner</h2>
+      <ul>
+        <li><strong>Labels</strong> work like folders that can overlap. They're saved on the mail server, so other apps see them too.</li>
+        <li><strong>Rules</strong> (<strong>Settings → Rules</strong>) file, label, star or mark new mail as it arrives. <em>Block sender</em> adds a rule that sends their mail to Junk.</li>
+        <li><strong>The Cleaner</strong> groups your inbox by mailing list and sender. Unsubscribe in one click, or archive or trash everything from one sender at once.</li>
+      </ul>
+
+      <h2 id="ai">AI assistance</h2>
+      <p>AI is off until you turn it on in <strong>Settings → AI</strong>. Then you get thread summaries, reply drafts (with an optional instruction such as "decline politely"), rewrites in a friendlier or shorter tone, proofreading, subject suggestions and <em>Ask your mail</em>, which answers questions with links to the messages it used.</p>
+      <p>Choose where the text goes: OpenAI or any compatible service (OpenRouter, Groq, Mistral), a model on your own Mac (Ollama, LM Studio), or Claude Code or Codex with your existing login. AI only runs when you click an AI button, and its result always opens as text you can edit. Nothing is sent automatically.</p>
+
+      <h2 id="encryption">Encryption</h2>
+      <p>In <strong>Settings → Encryption</strong>, create or import a PGP key, or import an S/MIME certificate, per account. Encrypted mail you receive is decrypted on screen only. Mail you send is encrypted automatically when every recipient has a key. Use <em>Look up online</em> to find missing keys.</p>
+
+      <h2 id="assistants">Assistants (MCP)</h2>
+      <p>Keel can let Claude Code, Codex or Claude Desktop search, read and draft your mail. It's off by default. In <strong>Settings → Assistants</strong> you choose read, write or send access and which accounts are shared, and copy the setup command. Every call shows up in that screen, and anything an assistant sends waits 60 seconds in Drafts so you can stop it.</p>
+
+      <h2 id="data">Your data and backups</h2>
+      <ul>
+        <li>Everything lives on your Mac, in <code>~/Library/Application Support/dev.quill.mail/</code>. Passwords and sign-in tokens are in the macOS Keychain. <strong>Settings → Your data → Show</strong> opens the folder.</li>
+        <li><strong>Settings → Export everything</strong> writes your mail as mbox files (which Apple Mail and Thunderbird can import), plus your drafts, snoozes and account settings, to your Downloads folder.</li>
+        <li><strong>Remove account</strong> deletes that account's password and downloaded mail from your Mac. Nothing changes on the server.</li>
+      </ul>
+
+      <h2 id="troubleshooting">Troubleshooting</h2>
+      <ul>
+        <li><strong>Sign-in failed:</strong> Gmail, iCloud, Yahoo and Fastmail need an app password, not your normal password. Fix it with <strong>Settings → Reconnect</strong>.</li>
+        <li><strong>An account isn't syncing:</strong> the <strong>Status</strong> page shows every account and folder with any error, plus Retry and Pause buttons.</li>
+        <li><strong>Calendar says access wasn't granted:</strong> reconnect the account with <em>Sign in with Google/Microsoft</em> and tick the calendar box on the consent screen.</li>
+        <li><strong>Reporting a bug:</strong> <strong>Settings → Diagnostics</strong> makes a report with your addresses masked and no message content. Paste it into a mail to <a href="mailto:kristof.feys@gmail.com">kristof.feys@gmail.com</a>.</li>
+      </ul>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="light-only" src="img/logo.svg" alt="Keel"><img class="dark-only" src="img/logo-dark.svg" alt="Keel">
+    <span>Made in Belgium by Kristof Feys</span>
+    <nav><a href="./">Home</a><a href="privacy.html">Privacy</a><a href="mailto:kristof.feys@gmail.com">Contact</a></nav>
+  </div>
+</footer>
+</body>
+</html>

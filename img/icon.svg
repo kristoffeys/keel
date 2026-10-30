@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="blue-stem" x1="364" y1="309" x2="486" y2="566" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1048d8"/><stop offset="1" stop-color="#0b43cc"/>
+    </linearGradient>
+    <linearGradient id="blue-top" x1="562" y1="340" x2="635" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#398aff"/><stop offset="1" stop-color="#307cef"/>
+    </linearGradient>
+    <linearGradient id="blue-bottom" x1="544" y1="484" x2="654" y2="618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c43cb"/><stop offset="1" stop-color="#093cbb"/>
+    </linearGradient>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="180" fill="#EFF4FF"/>
+  <!-- the logo's folded k, centred: bbox x 363.9–696.5, y 258.2–618 -->
+  <g transform="translate(512 512) scale(1.45) translate(-530.2 -438.1)">
+  <g id="symbol">
+    <path fill="url(#blue-stem)" d="M364 336 Q363 317 378 307 L456 262 Q485 249 485 280 L485 518 Q485 536 470 547 L386 604 Q364 620 364 591 Z"/>
+    <path fill="url(#blue-top)" d="M497 404 L558 347 Q565 340 579 340 L679 340 Q689 340 694 348 Q700 355 692 363 L584 471 Q575 481 564 474 L499 429 Q486 419 497 404 Z"/>
+    <path fill="url(#blue-bottom)" d="M489 544 L554 487 Q564 479 574 487 L689 596 Q700 607 688 615 Q685 618 676 618 L562 618 Q551 618 544 611 L489 559 Q484 553 489 544 Z"/>
+  </g>
+  </g>
+</svg>

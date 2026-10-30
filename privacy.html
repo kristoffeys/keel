@@ -1,24 +1,60 @@
 <!doctype html>
 <html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Keel privacy policy</title>
-<style>body{font:16px/1.6 -apple-system,system-ui,sans-serif;max-width:640px;margin:4rem auto;padding:0 1rem;color:#222}a{color:#2b5bd7}</style>
-<h1>Keel privacy policy</h1>
-<p><em>Last updated: 30 October 2026</em></p>
-<p>Keel is a desktop app that runs on your own computer. Its developer runs no servers and receives none of your data.</p>
-<h2>What Keel accesses</h2>
-<p>When you connect a Google or Microsoft account, Keel uses that access only to show, search, send and organise your own mail, to read and update your own calendars (including answering invitations), and to suggest contacts while you write.</p>
-<h2>Where your data is kept</h2>
-<p>Messages, calendar events and contacts are stored in a local database on your computer. Passwords and sign-in tokens are stored in the macOS Keychain. Removing an account deletes its local data.</p>
-<h2>What leaves your computer</h2>
-<ul>
-<li>Requests to your mail and calendar providers, to sync and send on your behalf.</li>
-<li>Icons fetched from a sender's website, and PGP key lookups (the recipient's domain and keys.openpgp.org) when you encrypt mail.</li>
-<li>Only if you turn on AI features and pick a provider: the text of the message you're working on goes to that provider. This is off by default and you see where it goes before anything is sent.</li>
-</ul>
-<p>Keel has no analytics, tracking or advertising, and never sells or shares your data. Use of data received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-<h2>Revoking access</h2>
-<p>Remove the account in Keel, or revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> or in your Microsoft account settings.</p>
-<h2>Contact</h2>
-<p><a href="mailto:kristof.feys@gmail.com">kristof.feys@gmail.com</a></p>
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img class="light-only" src="img/logo.svg" alt="Keel"><img class="dark-only" src="img/logo-dark.svg" alt="Keel"></a>
+    <nav>
+      <a href="./#features">Features</a>
+      <a href="manual.html">Manual</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a class="btn" href="mailto:kristof.feys@gmail.com?subject=Keel%20early%20access">Get early access</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap narrow">
+    <h1>Privacy policy</h1>
+    <p class="lede">Last updated: 30 October 2026</p>
+    <div class="callout"><p>Keel is a desktop app that runs on your own computer. Its developer runs no servers and receives none of your data.</p></div>
+
+    <h2>What Keel accesses</h2>
+    <p>When you connect a Google or Microsoft account, Keel uses that access only to show, search, send and organise your own mail, to read and update your own calendars (including answering invitations), and to suggest contacts while you write.</p>
+
+    <h2>Where your data is kept</h2>
+    <p>Messages, calendar events and contacts are stored in a local database on your computer. Passwords and sign-in tokens are stored in the macOS Keychain. Removing an account deletes its local data.</p>
+
+    <h2>What leaves your computer</h2>
+    <ul>
+      <li>Requests to your mail and calendar providers, to sync and send on your behalf.</li>
+      <li>Icons fetched from a sender's website, and PGP key lookups (the recipient's domain and keys.openpgp.org) when you encrypt mail.</li>
+      <li>Only if you turn on AI features and pick a provider: the text of the message you're working on goes to that provider. This is off by default, and you see where it goes before anything is sent.</li>
+    </ul>
+    <p>Keel has no analytics, tracking or advertising, and never sells or shares your data. Use of data received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>Revoking access</h2>
+    <p>Remove the account in Keel, or revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> or in your Microsoft account settings.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:kristof.feys@gmail.com">kristof.feys@gmail.com</a></p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="light-only" src="img/logo.svg" alt="Keel"><img class="dark-only" src="img/logo-dark.svg" alt="Keel">
+    <span>Made in Belgium by Kristof Feys</span>
+    <nav><a href="./">Home</a><a href="manual.html">Manual</a><a href="mailto:kristof.feys@gmail.com">Contact</a></nav>
+  </div>
+</footer>
+</body>
+</html>

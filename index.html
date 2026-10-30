@@ -1,11 +1,157 @@
 <!doctype html>
 <html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Keel</title>
-<style>body{font:16px/1.6 -apple-system,system-ui,sans-serif;max-width:640px;margin:4rem auto;padding:0 1rem;color:#222}a{color:#2b5bd7}</style>
-<h1>Keel</h1>
-<p>Keel is a personal desktop mail and calendar client for macOS. It talks to your mail server directly over IMAP and SMTP, and to Google and Microsoft calendars through their APIs. Everything is stored on your own computer.</p>
-<p>There are no Keel accounts, no telemetry and no Keel servers.</p>
-<p><a href="privacy.html">Privacy policy</a></p>
-<p>Contact: <a href="mailto:kristof.feys@gmail.com">kristof.feys@gmail.com</a></p>
+<title>Keel: a fast, private mail client for your Mac</title>
+<meta name="description" content="Keel is a desktop mail and calendar client that keeps everything on your Mac. All your inboxes in one place, keyboard-first, no accounts, no tracking.">
+<meta property="og:title" content="Keel: a fast, private mail client for your Mac">
+<meta property="og:description" content="All your inboxes and calendars in one keyboard-first app. Your mail stays on your Mac.">
+<meta property="og:image" content="https://kristoffeys.github.io/keel/img/invite.jpg">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img class="light-only" src="img/logo.svg" alt="Keel"><img class="dark-only" src="img/logo-dark.svg" alt="Keel"></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="manual.html">Manual</a>
+      <a class="btn" href="mailto:kristof.feys@gmail.com?subject=Keel%20early%20access">Get early access</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero wrap">
+    <span class="pill">Mail and calendar for macOS</span>
+    <h1>Every inbox in one calm place. <em>Nothing leaves your Mac.</em></h1>
+    <p class="lede">Keel brings Gmail, Microsoft 365, iCloud and any IMAP account into one fast, keyboard-first app, with your calendar right next to it. No Keel account, no cloud in between, no tracking.</p>
+    <div class="ctas">
+      <a class="btn" href="mailto:kristof.feys@gmail.com?subject=Keel%20early%20access">Get early access</a>
+      <a class="btn ghost" href="manual.html">Read the manual</a>
+    </div>
+    <div class="shot">
+      <img class="light-only" src="img/invite.jpg" alt="Keel showing a conversation with a meeting invitation, your day around it and Accept, Maybe and Decline buttons" width="2880" height="1800">
+      <img class="dark-only" src="img/invite-dark.jpg" alt="Keel in dark mode showing a conversation with a meeting invitation" width="2880" height="1800">
+    </div>
+  </div>
+
+  <section id="features" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Built for getting through mail</div>
+        <h2>Less sorting, more done.</h2>
+        <p>Keel moves the noise out of your way and gives every action a key, so a busy inbox is cleared before your coffee goes cold.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg></div>
+          <h3>All inboxes in one</h3>
+          <p>Work, personal and side projects side by side. Replies go out from the address the mail was sent to, automatically.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h3>Focused first</h3>
+          <p>Newsletters, notifications and no-reply senders land in Other. People you write to always stay in Focused.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg></div>
+          <h3>Keyboard-first</h3>
+          <p><kbd>j</kbd> <kbd>k</kbd> to move, <kbd>e</kbd> to archive, <kbd>r</kbd> to reply. Rebind any shortcut, and <kbd>⌘Z</kbd> undoes.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+          <h3>Instant search, offline</h3>
+          <p>Every message is indexed on your Mac. Search all accounts at once with <code>from:</code>, <code>to:</code>, <code>subject:</code> and <code>account:</code>.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3>Snooze and undo send</h3>
+          <p>Snooze a thread until you need it. Every send waits a few seconds, so the typo you spot at the last moment never goes out.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg></div>
+          <h3>Unsubscribe in one click</h3>
+          <p>The Cleaner groups your inbox by mailing list and sender. Unsubscribe, archive or trash a whole sender at once.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow">Calendar</div>
+        <h2>Your calendar, next to your mail.</h2>
+        <p>Google, Microsoft, iCloud and any CalDAV calendar in day, week and month views. Invitations show up as a card with your day around them, so you see the clash before you say yes.</p>
+        <ul class="ticks">
+          <li>Accept, Maybe or Decline straight from the mail</li>
+          <li>Overlapping meetings flagged on the invitation</li>
+          <li>Join the video call from the event</li>
+        </ul>
+      </div>
+      <div class="shot"><img src="img/calendar.jpg" alt="Keel's week view with meetings from several calendars" width="2880" height="1800" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section id="privacy" class="alt">
+    <div class="wrap split flip">
+      <div>
+        <div class="eyebrow">Private by design</div>
+        <h2>Your mail is yours. Keel just reads it for you.</h2>
+        <p>Most mail apps route your inbox through their own servers. Keel doesn't have any. It talks straight to your mail provider and keeps everything on your Mac.</p>
+        <ul class="ticks">
+          <li>No Keel account, no telemetry, no analytics</li>
+          <li>Passwords and sign-in tokens in the macOS Keychain</li>
+          <li>Remote images and tracking pixels blocked until you allow them</li>
+          <li>PGP and S/MIME encryption built in</li>
+          <li>AI stays off until you turn it on, with a provider you pick (local models too)</li>
+        </ul>
+        <p style="margin-top:16px"><a href="privacy.html">Read the privacy policy →</a></p>
+      </div>
+      <div class="shot"><img class="light-only" src="img/inbox.jpg" alt="Keel's unified inbox" width="2880" height="1800" loading="lazy"><img class="dark-only" src="img/inbox-dark.jpg" alt="Keel's unified inbox in dark mode" width="2880" height="1800" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">And a lot more</div>
+        <h2>The details you notice on day two.</h2>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Rules</h3><p>File, label, star or mark new mail as it arrives. Blocking a sender is one click.</p></div>
+        <div class="card"><h3>AI when you want it</h3><p>Thread summaries, reply drafts, rewrites and "ask your mail", with OpenAI, Ollama, Claude Code or Codex. Results always open as editable text.</p></div>
+        <div class="card"><h3>Works offline</h3><p>Archive, move and reply on a plane. Keel queues it and catches up when you're back online.</p></div>
+        <div class="card"><h3>Your data, exportable</h3><p>Export everything to standard mbox files that Apple Mail and Thunderbird can open.</p></div>
+        <div class="card"><h3>Light and dark</h3><p>Theme, text size, density and preview lines to taste. In English and Dutch.</p></div>
+        <div class="card"><h3>Works with your assistant</h3><p>Let Claude or Codex search and draft your mail over MCP, with access you control and a log of every call.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Try Keel.</h2>
+      <p>Keel is in early access for macOS. Send a short mail and you'll get a build plus a hand with setup.</p>
+      <div class="hero" style="padding:0"><div class="ctas">
+        <a class="btn" href="mailto:kristof.feys@gmail.com?subject=Keel%20early%20access">Get early access</a>
+        <a class="btn ghost" href="manual.html#getting-started">How setup works</a>
+      </div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="light-only" src="img/logo.svg" alt="Keel"><img class="dark-only" src="img/logo-dark.svg" alt="Keel">
+    <span>Made in Belgium by Kristof Feys</span>
+    <nav><a href="manual.html">Manual</a><a href="privacy.html">Privacy</a><a href="mailto:kristof.feys@gmail.com">Contact</a></nav>
+  </div>
+</footer>
+</body>
+</html>
